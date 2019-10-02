@@ -30,10 +30,10 @@
     text-align: $text-align !important;
     color: $primary !important;
 }
-#image {
-  width: $width !important;
-  height: $height !important;
-}
+// #image {
+//   width: $width !important;
+//   height: $height !important;
+// }
 </style>
 
 <script>

@@ -9,28 +9,29 @@ export default {
       menu: [
         {
           header: true,
-          title: "Main Navigation",
+          title: 'Main Navigation',
           hiddenOnCollapse: true
         },
         {
-          href: "/Dashboard",
-          title: "Dashboard",
-          icon: "fa fa-chart-area",
+          href: '/Dashboard',
+          title: 'Dashboard',
+          icon: 'fas fa-tachometer-alt'
         },
         {
-          href: "/Subjects",
-          title: "Subjects",
-          icon: "fa fa-chart-area",
+          href: '/Subjects',
+          title: 'Subjects',
+          icon: 'fas fa-plus-square'
         },
         {
-          href: "/PersonalInfo",
-          title: "Personal Info",
-          icon: "fa fa-chart-area",
+          href: '/PersonalInfo',
+          title: 'Personal Info',
+          icon: 'fas fa-user',
+
         },
         {
-          href: "/Login",
-          title: "Logout",
-          icon: "fa fa-chart-area",
+          href: '/Login',
+          title: 'Logout',
+          icon: 'fas fa-power-off'
         }
       ]
     };

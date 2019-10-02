@@ -102,5 +102,6 @@ export default {
         AUTH.register(this.content.username, this.content.password);
     }
   }
+  
 };
 </script>

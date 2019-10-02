@@ -52,10 +52,12 @@
 }
 </style>
 <script>
-import AUTH from 'services/auth'
+import AUTH from "services/auth";
+import ROUTER from "router";
+// import jquery from "jquery";
 export default {
   data() {
-    AUTH
+    AUTH;
     return {
       username: "",
       password: ""
@@ -64,9 +66,12 @@ export default {
   methods: {
     submit: function(e) {
       e.preventDefault();
-      AUTH.login(this.username, this.password)
-    },
-
+      let user = AUTH.login(this.username, this.password);
+      AUTH.setUser(user);
+      if (user !== null) {
+        ROUTER.push("/Dashboard");
+      }
+    }
   }
 };
 </script>
